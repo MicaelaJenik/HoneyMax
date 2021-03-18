@@ -2,8 +2,12 @@
 <html>
   <head>
     <title>HoneyMax</title>
+    <meta description="Honey Max is a leading honey exporting company from Buenos Aires, Argentina.">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+
+    <meta charset="utf-8">
+
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -12,6 +16,37 @@
   </head>
 
   <body>
+    <%= render 'shared/navbar' %>
+
     <%= yield %>
+    <div class="bg-white">
+      <footer class="pt-5" id="footerbottom">
+        <div class="d-flex container">
+          <div>
+            <%= link_to root_path do %>
+              <%= image_tag "logo.png", style: "width: 180px;", class: "mr-5" %>
+            <% end %>
+          </div>
+
+          <div class="mx-5">
+            <p>LINKS</p>
+            <p> <%= link_to "About", about_path, class: "text-decoration-none" %> </p>
+            <p> <%= link_to "Our Honey", honey_path, class: "text-decoration-none" %></p>
+          </div>
+
+          <div class="mx-5">
+            <p>CONTACT US</p>
+            <p>Tilcara 2730, C1437</p>
+            <p>Buenos Aires, Argentina</p>
+            <p>Email: info@honeymax.com.ar</p>
+          </div>
+
+        </div>
+
+        <p class="text-center bg-light mt-4 pt-3"> © Honey Max | Honey Max S.A. 2021</p>
+
+      </footer>
+    </div>
+
   </body>
 </html>

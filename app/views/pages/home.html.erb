@@ -1,2 +1,59 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div id="home">
+  <div class="bg-white" id="header">
+    <div class="container">
+      <h1 class="text-center py-3">HONEYMAX</h1>
+      <h5 class="text-center pb-3">NATURAL 100% PURE HONEY</h5>
+    </div>
+  </div>
+
+  <div class="bg-black">
+    <div class="py-5 d-flex" id="block">
+      <div class="p-5">
+        <%= link_to about_path do %>
+          <h5 class="pb-3">WHAT MAKES US DIFFERENT</h5>
+        <% end %>
+        <p class="pr-5">Honey Max founder Mariano Jenik has been providing consistent and reliable supply of high quality honey to international customers for the alst 30 years.</p>
+        <p class="pr-5">From Argentina to the rest of the world, Honey Max sources the most natural and raw honey, making it available for the consumer in its most pure form.</p>
+      </div>
+      <div class="cards">
+        <%= image_tag "keeper.png", class: "big-card" %>
+        <%= image_tag "box.png", class: "big-card" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-white">
+    <div class="py-5 d-flex" id="block">
+      <%= image_tag "bees.png", class: "img-round" %>
+      <div class="p-5 text-right align-self-center">
+        <h5 class="pb-3">THE SECRET IS IN THE HONEY</h5>
+        <p>There is no place on earth as rich in high quality honey as the interior of Argentina. </p>
+        <p>And, through Honey Max, we want to share it with the rest of the world.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-light">
+    <div id="block">
+      <div class="p-5 text-center">
+        <h5 class="pb-3">IF YOU WANT TO KNOW MORE, DROP US A MESSAGE</h5>
+        <p class="pr-5">Whether you'd like to know more or are interested in sourcing honey in bulk, fill in the following form</p>
+        <form class="pb-5 w-50 mx-auto">
+          <div class="form-group py-2">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name & Surname" style="border-radius: 15px!important;">
+          </div>
+          <div class="form-group pb-2">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail address" style="border-radius: 15px!important;">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Have you found what you were looking for?" style="border-radius: 15px!important;"></textarea>
+          </div>
+          <div class="text-center pt-2">
+            <div class="w-25 justify-content-center btn btn-outline-warning">Submit!</div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>
